@@ -22,5 +22,15 @@ ul{
   padding: 5px;
 }
 
+h2 {border-style: inset;}
+
+/*.Grass {
+  border: 10px green;
+  padding: 15px;
+  border-image: url(pokemon\1.png) 30 round;
+}*/
+
+
+
 
 
