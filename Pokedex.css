@@ -24,11 +24,65 @@ ul{
 
 h2 {border-style: inset;}
 
-/*.Grass {
-  border: 10px green;
-  padding: 15px;
-  border-image: url(pokemon\1.png) 30 round;
-}*/
+.grass {
+  border: 100px green;
+  background-color: rgb(105, 219, 139);
+}
+
+.fire {
+  border: 100px rgb(205, 108, 72);
+  background-color: rgb(237, 156, 131);
+}
+
+.water {
+  border: 100px green;
+  background-color: rgb(97, 198, 228);
+}
+
+.bug {
+  border: 100px green;
+  background-color: rgb(188, 144, 119);
+}
+
+.normal {
+  border: 100px green;
+  background-color: rgb(186, 178, 178);
+}
+
+
+
+form {
+  background-color: rgb(239, 185, 139);
+  width: 325px;
+  height: 35px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+input {
+  all: unset;
+  font: 16px system-ui;
+  color: #fff;
+  height: 100%;
+  width: 100%;
+  padding: 7px 12px;
+}
+
+::placeholder {
+  color: brown;
+  opacity: 1; 
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+  width: 70px;
+  height: 70px;
+  font-weight: bold;
+  
+}
 
 
 
