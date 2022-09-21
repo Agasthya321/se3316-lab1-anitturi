@@ -6,6 +6,7 @@
 <meta name="description" content="">
 <meta name="author" content="">
 <link rel="stylesheet" href="Pokedex.css">
+<script src="Pokedex.js"></script>
 </head>
 <body>
 <!-- Place your content here -->
@@ -20,24 +21,38 @@
   <input type="search" id="red" name="q" placeholder="Enter Pokemon number...">
   <button>Search</button>
 </form>
+<div id = "poke_container" class = "poke_container"></div>
 
 <ul>
     
   <li>
       <div class="row">
           <div class="column">
-            <h2>Bulbasaur</h2>
+            <h2 class = "name">Bulbasaur</h2>
             <img src="pokemon\1.png" width="200" height="200" class = "grass">
+            <div class = "info">
+              <span class = "number">#001</span>
+            <small class = "type">Type: <span>grass</span>, <span>poison</span></small>
+            </div>
           </div>
+          
             
           <div class="column">
             <h2>Ivysaur</h2>
             <img src="pokemon\2.png" width="200" height="200" class = "grass">
+            <div class = "info">
+              <span class = "number">#002</span>
+            <small class = "type">Type: <span>grass</span>, <span>poison</span></small>
+            </div>
           </div>
             
           <div class="column">
             <h2>Venusaur</h2>
             <img src="pokemon\3.png"  width="200" height="200" class = "grass">
+            <div class = "info">
+              <span class = "number">#003</span>
+            <small class = "type">Type: <span>grass</span>, <span>poison</span></small>
+            </div>
           </div>
       </div>
   </li>
@@ -49,16 +64,28 @@
         <div class="column">
           <h2>Charmander</h2>
         <img src = "pokemon\4.png" width="200" height="200" class="fire">
+        <div class = "info">
+          <span class = "number">#004</span>
+        <small class = "type">Type: <span>fire</span></small>
+        </div>
         </div>
         
         <div class="column">
           <h2>Charmeleon</h2>
         <img src = "pokemon\5.png" width="200" height="200" class="fire">
+        <div class = "info">
+          <span class = "number">#005</span>
+        <small class = "type">Type: <span>fire</span></small>
+        </div>
         </div>
         
         <div class="column">
           <h2>Charizard</h2>
         <img src = "pokemon\6.png" width="200" height="200" class="fire">
+        <div class = "info">
+          <span class = "number">#006</span>
+        <small class = "type">Type: <span>fire</span>, <span>flying</span></small>
+        </div>
         </div>
       </div>
     </li>
@@ -69,16 +96,28 @@
         <div class="column">
           <h2>Squirtle</h2>
         <img src = "pokemon\7.png" width="200" height="200" class="water">
+        <div class = "info">
+          <span class = "number">#007</span>
+        <small class = "type">Type: <span>water</span></small>
+        </div>
         </div>
         
         <div class="column">
           <h2>Wartortle</h2>
         <img src = "pokemon\8.png" width="200" height="200" class="water">
+        <div class = "info">
+          <span class = "number">#008</span>
+        <small class = "type">Type: <span>water</span></small>
+        </div>
         </div>
         
         <div class="column">
           <h2>Blastoise</h2>
         <img src = "pokemon\9.png" width="200" height="200" class="water">
+        <div class = "info">
+          <span class = "number">#009</span>
+        <small class = "type">Type: <span>water</span></small>
+        </div>
         </div>
       </div>
     </li>
@@ -88,16 +127,28 @@
         <div class="column">
           <h2>Caterpie</h2>
         <img src = "pokemon\10.png" width="200" height="200" class="bug">
+        <div class = "info">
+          <span class = "number">#010</span>
+        <small class = "type">Type: <span>bug</span></small>
+        </div>
         </div>
         
         <div class="column">
           <h2>Metapod</h2>
         <img src = "pokemon\11.png" width="200" height="200" class="bug">
+        <div class = "info">
+          <span class = "number">#011</span>
+        <small class = "type">Type: <span>bug</span></small>
+        </div>
         </div>
         
         <div class="column">
           <h2>Butterfree</h2>
         <img src = "pokemon\12.png" width="200" height="200" class="bug">
+        <div class = "info">
+          <span class = "number">#012</span>
+        <small class = "type">Type: <span>bug</span>, <span>flying</span></small>
+        </div>
         </div>
       </div>
     </li>
@@ -107,16 +158,28 @@
         <div class="column">
           <h2>Weedle</h2>
         <img src = "pokemon\13.png" width="200" height="200" class="bug">
+        <div class = "info">
+          <span class = "number">#013</span>
+        <small class = "type">Type: <span>bug</span>, <span>poison</span></small>
+        </div>
         </div>
         
         <div class="column">
           <h2>Kakuna</h2>
         <img src = "pokemon\14.png" width="200" height="200" class="bug">
+        <div class = "info">
+          <span class = "number">#014</span>
+        <small class = "type">Type: <span>bug</span>, <span>poison</span></small>
+        </div>
         </div>
         
         <div class="column">
           <h2>Beedrill</h2>
         <img src = "pokemon\15.png" width="200" height="200" class="bug">
+        <div class = "info">
+          <span class = "number">#015</span>
+        <small class = "type">Type: <span>bug</span>, <span>poison</span></small>
+        </div>
         </div>
       </div>
     </li>
@@ -127,16 +190,28 @@
         <div class="column">
           <h2>Pidgey</h2>
         <img src = "pokemon\16.png" width="200" height="200" class="normal">
+        <div class = "info">
+          <span class = "number">#016</span>
+        <small class = "type">Type: <span>normal</span>, <span>flying</span></small>
+        </div>
         </div>
         
         <div class="column">
           <h2>Pidgeotto</h2>
         <img src = "pokemon\17.png" width="200" height="200" class="normal">
+        <div class = "info">
+          <span class = "number">#017</span>
+        <small class = "type">Type: <span>normal</span>, <span>flying</span></small>
+        </div>
         </div>
         
         <div class="column">
           <h2>Pidgeot</h2>
         <img src = "pokemon\18.png" width="200" height="200" class="normal">
+        <div class = "info">
+          <span class = "number">#018</span>
+        <small class = "type">Type: <span>normal</span>, <span>flying</span></small>
+        </div>
         </div>
       </div>
     </li>
@@ -147,11 +222,19 @@
         <div class="column">
           <h2>Rattata</h2>
         <img src = "pokemon\19.png" width="200" height="200" class="normal">
+        <div class = "info">
+          <span class = "number">#019</span>
+        <small class = "type">Type: <span> normal</span></small>
+        </div>
         </div>
         
         <div class="column">
           <h2>Raticate</h2>
         <img src = "pokemon\20.png" width="200" height="200" class="normal">
+        <div class = "info">
+          <span class = "number">#020</span>
+        <small class = "type">Type: <span> normal</span></small>
+        </div>
         </div>
         
         
