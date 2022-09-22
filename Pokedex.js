@@ -51,6 +51,7 @@ function searchPokemonName(){
         alert(output);
     }
 }
+}
 
 function searchPokemonId(){
 
@@ -58,7 +59,11 @@ function searchPokemonId(){
     let output = "";
     let count = 0;
 
-    
+    if(pokemonId.length > 20 || pokemonId.length == 0){
+        alert("Search does not contain between 1-20 characters. Please try again.")
+    }
+
+    else{ 
     for (let i = 0; i < pokemon.length; i++){
         if(num[i].includes(pokemonId)){
             output += pokemon[i] + "/" + num[i] + " is type " + pokemonType[i] + " and has fast moves " + fastMoves[i] + " and charge moves " + chargeMoves[i] + "\n\n";
@@ -67,10 +72,19 @@ function searchPokemonId(){
 
         if(count > 4){
             break;
-        }     
+        }
+        
     }
+
+    if(count == 0){
+        alert("No Pokemon found, try again.")
+    }
+    else{
         alert(output);
-}
+    }
+    
+    }
 
 
 }
+
