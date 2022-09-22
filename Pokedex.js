@@ -42,6 +42,26 @@ function searchPokemonName(){
         alert(output);
 }
 
+function searchPokemonId(){
+
+    let pokemonId = document.getElementById("pokeId").value;
+    let output = "";
+    let count = 0;
+
+    
+    for (let i = 0; i < pokemon.length; i++){
+        if(num[i].includes(pokemonId)){
+            output += pokemon[i] + "/" + num[i] + " is type " + pokemonType[i] + " and has fast moves " + fastMoves[i] + " and charge moves " + chargeMoves[i] + "\n\n";
+            count++;
+        }
+
+        if(count > 4){
+            break;
+        }     
+    }
+        alert(output);
+}
+
 
 
 
