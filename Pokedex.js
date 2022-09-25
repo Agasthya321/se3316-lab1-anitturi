@@ -3,7 +3,7 @@ const pokemon = ["Bulbasaur","Ivysaur","Venusaur","Charmander","Charmeleon","Cha
                 "Wartortle","Blastoise","Caterpie","Metapod","Butterfree","Weedle","Kakuna",
                 "Beedrill","Pidgey","Pidgeotto","Pidgeot","Rattata","Raticate"]
 
-const num = ["#001","#002","#003","#004", "#005", "#006", "#007", "#008", "#009", "#010", "#011", "#012", "#013", "#014", "#015", "#016", "017", "018", "019", "020"]
+const num = ["#001","#002","#003","#004", "#005", "#006", "#007", "#008", "#009", "#010", "#011", "#012", "#013", "#014", "#015", "#016", "#017", "#018", "#019", "#020"]
 
 const pokemonType = ["Grass/Poison","Grass/Poison","Grass/Poison","Fire","Fire","Fire/Flying",
                     "Water","Water","Water","Bug","Bug","Bug/Flying","Bug/Poison","Bug/Poison",
@@ -35,7 +35,7 @@ function searchPokemonName(){
     else{
     for (let i = 0; i < pokemon.length; i++){
         if(pokemon[i].toLowerCase().includes(pokemonName.toLowerCase())){
-            output += pokemon[i] + "/" + num[i] + " is type " + pokemonType[i] + " and has fast moves " + fastMoves[i] + " and charge moves " + chargeMoves[i] + "\n\n";
+            output += pokemon[i] + "/" + num[i] + " is a " + pokemonType[i] + " type pokemon."+ " It has " + fastMoves[i] + " for fast moves. Also, it has " + chargeMoves[i] +   " for charge moves. "  + "\n\n";
             count++;
         }
 
@@ -66,7 +66,7 @@ function searchPokemonId(){
     else{ 
     for (let i = 0; i < pokemon.length; i++){
         if(num[i].includes(pokemonId)){
-            output += pokemon[i] + "/" + num[i] + " is type " + pokemonType[i] + " and has fast moves " + fastMoves[i] + " and charge moves " + chargeMoves[i] + "\n\n";
+            output += pokemon[i] + "/" + num[i] + " is a " + pokemonType[i] + " type pokemon."+ " It has " + fastMoves[i] + " for fast moves. Also, it has " + chargeMoves[i] +   " for charge moves. "  + "\n\n";
             count++;
         }
 
