@@ -22,6 +22,19 @@ const chargeMoves = ["Sludge Bomb / Seed Bomb / Power Whip", "Sludge Bomb / Sola
 "Aerial Ace / Sludge Bomb / X-Scissor", "Twister / Aerial Ace / Air Cutter" , "Twister / Aerial Ace / Air Cutter" , 
 "Hurricane / Aerial Ace / Brave Bird" , "Dig / Hyper Fang / Body Slam" , "Dig / Hyper Fang / Hyper Beam" , "Aerial Ace / Drill Peck / Sky Attack"]
 
+
+var list = document.getElementById("AllPokemon").getElementsById("li");
+const searchBox = document.getElementById("pokeName");
+
+searchBox.addEventListener('keyup',function(e){
+    const searchString = e.target.value.toLowerCase;
+    const filteredPokemon = pokemon.filter((pokemon) => {
+       return pokemon.name.toLowerCase().includes(searchString);
+    });
+    console.log(filteredPokemon);
+   });
+
+   
 function searchPokemonName(){
 
     let pokemonName = document.getElementById("pokeName").value;
