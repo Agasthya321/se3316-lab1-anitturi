@@ -1,8 +1,4 @@
 
-const pokemon = ["Bulbasaur","Ivysaur","Venusaur","Charmander","Charmeleon","Charizard","Squirtle",
-                "Wartortle","Blastoise","Caterpie","Metapod","Butterfree","Weedle","Kakuna",
-                "Beedrill","Pidgey","Pidgeotto","Pidgeot","Rattata","Raticate"]
-
 const num = ["#001","#002","#003","#004", "#005", "#006", "#007", "#008", "#009", "#010", "#011", "#012", "#013", "#014", "#015", "#016", "#017", "#018", "#019", "#020"]
 
 const pokemonType = ["Grass/Poison","Grass/Poison","Grass/Poison","Fire","Fire","Fire/Flying",
@@ -23,18 +19,39 @@ const chargeMoves = ["Sludge Bomb / Seed Bomb / Power Whip", "Sludge Bomb / Sola
 "Hurricane / Aerial Ace / Brave Bird" , "Dig / Hyper Fang / Body Slam" , "Dig / Hyper Fang / Hyper Beam" , "Aerial Ace / Drill Peck / Sky Attack"]
 
 
-var list = document.getElementById("AllPokemon").getElementsById("li");
-const searchBox = document.getElementById("pokeName");
 
-searchBox.addEventListener('keyup',function(e){
-    const searchString = e.target.value.toLowerCase;
-    const filteredPokemon = pokemon.filter((pokemon) => {
-       return pokemon.name.toLowerCase().includes(searchString);
-    });
+
+
+const pokemon = ["Bulbasaur","Ivysaur","Venusaur","Charmander","Charmeleon","Charizard","Squirtle",
+                "Wartortle","Blastoise","Caterpie","Metapod","Butterfree","Weedle","Kakuna",
+                "Beedrill","Pidgey","Pidgeotto","Pidgeot","Rattata","Raticate"]
+
+
+
+// var list = document.getElementById("AllPokemon").getElementsById("li");
+// for(let count = 0; count < filteredPokemon.length; count++{
+//     
+// })
+
+function displayPokemon(){
+
+    let searchBox = document.getElementById("pokeName").value;
+
+    let filteredPokemon = [];
+
+    for (let i = 0; i < pokemon.length;i++){
+        if(pokemon[i].toLowerCase().includes(searchBox.toLowerCase())){
+            filteredPokemon.push(pokemon[i])
+        }
+    }
     console.log(filteredPokemon);
-   });
-
    
+}
+   
+
+
+
+
 function searchPokemonName(){
 
     let pokemonName = document.getElementById("pokeName").value;
@@ -101,3 +118,4 @@ function searchPokemonId(){
 
 }
 
+ 
