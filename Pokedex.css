@@ -17,6 +17,15 @@ body{
   border-style:groove;
 }
 
+.container1{
+  width: 800px;
+  height: 700px;
+  background: rgb(227, 232, 208);
+  margin-left: auto;
+  margin-right: auto;
+  border-style:groove;
+}
+
 ul{
   list-style: none;
 }

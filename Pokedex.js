@@ -28,10 +28,9 @@ const pokemon = ["Bulbasaur","Ivysaur","Venusaur","Charmander","Charmeleon","Cha
 
 
 
-// var list = document.getElementById("AllPokemon").getElementsById("li");
-// for(let count = 0; count < filteredPokemon.length; count++{
-//     
-// })
+// var list = document.getElementById("AllPokemon").getElementById("li");
+// console.log(list[0])
+
 
 function displayPokemon(){
 
@@ -45,8 +44,36 @@ function displayPokemon(){
         }
     }
     console.log(filteredPokemon);
-   
+
+    var ul = document.getElementById("AllPokemon");
+    var li = document.createElement("li");
+    li.appendChild(document.createTextNode(filteredPokemon));
+    ul.appendChild(li)
+
+
+
+
+    // for (let i = 0; i < pokemon.length; i++){
+    //     if((pokemon[i].toLowerCase().includes(filteredPokemon.toLowerCase()))){
+            
+    //     }
+    // } 
 }
+
+
+// for(i = 0; i < filteredPokemon.length; i++){
+//     let test = document.createElement("li");
+//     pokeFilteredName = document.createTextNode(filteredPokemon[i])
+//     test.appendChild(pokeFilteredName);
+//     console.log(pokeFilteredName);
+// }
+
+//have to create the pokemon again with the filtered list - using javascript to do that 
+
+
+ 
+
+
    
 
 

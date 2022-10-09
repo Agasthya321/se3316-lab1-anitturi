@@ -16,7 +16,7 @@
 
 <form id="form1"> 
   <input type="search" id="pokeName" name="q" placeholder="Enter Pokemon name..." onkeyup="displayPokemon()">
-  <button onclick="searchPokemonName()">Search</button>
+  <button onclick="displayPokemon()">Search</button>
 </form>
 <br/>
 <form id="form2"> 
@@ -25,26 +25,37 @@
 </form>
 <div id = "poke_container" class = "poke_container"></div>
 <br/>
+
+<!-- <div class = "container1">
+
+  
+</div> -->
+
+
 <section class = "container">
+
+
 
 <ul id = "AllPokemon">
     
   
       <div class="row">
           <div class="column">
-            <li>
-            <h2 class = "name">Bulbasaur</h2>
-            <img src="pokemon\1.png" width="200" height="200" class = "grass" alt = "Bulbasaur">
-            <div class = "info">
-              <span class = "number">#001</span>
-            <small class = "type">Type: <span>grass</span>, <span>poison</span></small>
-            </div>
-            </li>
-          </div>
+            <li id = "myLi">
+
+              <h2 class = "name">Bulbasaur</h2>
+ 
+              <img src="pokemon\1.png" width="200" height="200" class = "grass" alt = "Bulbasaur">
+             
+              <div class = "type"> <h7>#001</h7> Type:<span>grass</span>, <span>poison</span></div>
+             
+             </li>
+           </div>
+          
           
             
           <div class="column">
-            <li>
+            <li id = "myLi">
             <h2>Ivysaur</h2>
             <img src="pokemon\2.png" width="200" height="200" class = "grass" alt = "Ivysaur">
             <div class = "info">
@@ -55,7 +66,7 @@
           </div>
             
           <div class="column">
-            <li>
+            <li id = "myLi">
             <h2>Venusaur</h2>
             <img src="pokemon\3.png"  width="200" height="200" class = "grass" alt = "Venusaur">
             <div class = "info">
@@ -72,7 +83,7 @@
     
       <div class="row">
         <div class="column">
-          <li>
+          <li id = "myLi"></li>
           <h2>Charmander</h2>
         <img src = "pokemon\4.png" width="200" height="200" class="fire" alt = "Charmander">
         <div class = "info">
@@ -104,7 +115,7 @@
         </li>
         </div>
       </div>
-    </li>
+    
 
 
     
