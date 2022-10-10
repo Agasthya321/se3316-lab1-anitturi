@@ -76,15 +76,17 @@ function displayPokemonId(){
 
     for (let i = 0; i < num.length;i++){
         if(num[i].includes(searchBox) && searchBox != ""){
-            
-            result += pokemon[i] + "/" + num[i] + " is a " + pokemonType[i] + " type pokemon."+ " It has " + fastMoves[i] + " for fast moves. Also, it has " + chargeMoves[i] +   " for charge moves. "  + "\n\n";
+
+            results.textContent += pokemon[i] + "/" + num[i] + " is a " + pokemonType[i] + " type pokemon."+ " It has " + fastMoves[i] + " for fast moves. Also, it has " + chargeMoves[i] +   " for charge moves. "  + "\n\n";
+
+           // result += pokemon[i] + "/" + num[i] + " is a " + pokemonType[i] + " type pokemon."+ " It has " + fastMoves[i] + " for fast moves. Also, it has " + chargeMoves[i] +   " for charge moves. "  + "\n\n";
             
         }
     }
    
 
 
-    results.textContent= result;
+    //results.textContent= result;
     document.getElementById("newDivision").appendChild(results);
 }
     
