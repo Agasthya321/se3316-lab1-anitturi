@@ -31,10 +31,13 @@ const pokemon = ["Bulbasaur","Ivysaur","Venusaur","Charmander","Charmeleon","Cha
 var results = document.createElement("p");
     results.id = "results"
 
+    var result = ""
+
 
 
 function displayPokemonName(){
 
+    
     document.getElementById("newDivision").children.item(0).remove();
 
     var results = document.createElement("p");
@@ -42,17 +45,46 @@ function displayPokemonName(){
 
     let searchBox = document.getElementById("pokeName").value.toLowerCase();
 
-    let filteredPokemon = [];
+    
+
 
     for (let i = 0; i < pokemon.length;i++){
         if(pokemon[i].toLowerCase().includes(searchBox.toLowerCase()) && searchBox != ""){
-            filteredPokemon.push(pokemon[i])
+            results.textContent += pokemon[i] + "/" + num[i] + " is a " + pokemonType[i] + " type pokemon."+ " It has " + fastMoves[i] + " for fast moves. Also, it has " + chargeMoves[i] +   " for charge moves. "  + "\n\n";
+
+         //   result += pokemon[i] + "/" + num[i] + " is a " + pokemonType[i] + " type pokemon."+ " It has " + fastMoves[i] + " for fast moves. Also, it has " + chargeMoves[i] +   " for charge moves. "  + "\n\n";
+            
         }
     }
-    console.log(filteredPokemon);
+    
 
 
-    results.textContent= filteredPokemon;
+   // results.textContent= result;
+    document.getElementById("newDivision").appendChild(results);
+}
+
+function displayPokemonId(){
+
+    document.getElementById("newDivision").children.item(0).remove();
+
+    var results = document.createElement("p");
+    results.id = "results"
+
+    let searchBox = document.getElementById("pokeId").value;
+
+    
+
+    for (let i = 0; i < num.length;i++){
+        if(num[i].includes(searchBox) && searchBox != ""){
+            
+            result += pokemon[i] + "/" + num[i] + " is a " + pokemonType[i] + " type pokemon."+ " It has " + fastMoves[i] + " for fast moves. Also, it has " + chargeMoves[i] +   " for charge moves. "  + "\n\n";
+            
+        }
+    }
+   
+
+
+    results.textContent= result;
     document.getElementById("newDivision").appendChild(results);
 }
     
