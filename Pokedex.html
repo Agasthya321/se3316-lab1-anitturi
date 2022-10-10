@@ -16,32 +16,33 @@
 
 <form id="form1"> 
   <input type="search" id="pokeName" name="q" placeholder="Enter Pokemon name..." onkeyup="displayPokemon()">
-  <button onclick="displayPokemon()">Search</button>
+  <button onclick="searchPokemonName()">Search</button>
 </form>
 <br/>
 <form id="form2"> 
   <input type="number" id="pokeId" name="q" placeholder="Enter Pokemon number...">
   <button onclick = "searchPokemonId()">Search</button>
 </form>
-<div id = "poke_container" class = "poke_container"></div>
-<br/>
-
-<!-- <div class = "container1">
-
-  
-</div> -->
 
 
-<section class = "container">
+
+
+<div id = "test">
+
+  <ul id = "newList">
+
+  </ul>
+
+</div>
+
 
 
 
 <ul id = "AllPokemon">
     
-  
       <div class="row">
           <div class="column">
-            <li id = "myLi">
+            <li>
 
               <h2 class = "name">Bulbasaur</h2>
  
@@ -55,24 +56,30 @@
           
             
           <div class="column">
-            <li id = "myLi">
-            <h2>Ivysaur</h2>
+            <li>
+           
+            
+            <h2 class = "name">Ivysaur</h2>
+ 
             <img src="pokemon\2.png" width="200" height="200" class = "grass" alt = "Ivysaur">
-            <div class = "info">
-              <span class = "number">#002</span>
-            <small class = "type">Type: <span>grass</span>, <span>poison</span></small>
-            </div>
+           
+            <div class = "type"> <h7>#002</h7> Type:<span>grass</span>, <span>poison</span></div>
             </li>
           </div>
+
+          
             
           <div class="column">
-            <li id = "myLi">
-            <h2>Venusaur</h2>
-            <img src="pokemon\3.png"  width="200" height="200" class = "grass" alt = "Venusaur">
-            <div class = "info">
-              <span class = "number">#003</span>
-            <small class = "type">Type: <span>grass</span>, <span>poison</span></small>
-            </div>
+            <li>
+            
+            
+            <h2 class = "name">Venusaur</h2>
+ 
+            <img src="pokemon\3.png" width="200" height="200" class = "grass" alt = "Venusaur">
+           
+            <div class = "type"> <h7>#003</h7> Type:<span>grass</span>, <span>poison</span></div>
+
+
             </li>
           </div>
       </div>
@@ -83,35 +90,35 @@
     
       <div class="row">
         <div class="column">
-          <li id = "myLi"></li>
-          <h2>Charmander</h2>
-        <img src = "pokemon\4.png" width="200" height="200" class="fire" alt = "Charmander">
-        <div class = "info">
-          <span class = "number">#004</span>
-        <small class = "type">Type: <span>fire</span></small>
-        </div>
+          <li>
+            <h2 class = "name">Charmander</h2>
+ 
+            <img src="pokemon\4.png" width="200" height="200" class = "fire" alt = "Charmander">
+           
+            <div class = "type"> <h7>#004</h7> Type:<span>fire</span>
+
           </li>
         </div>
         
         <div class="column">
           <li>
-          <h2>Charmeleon</h2>
-        <img src = "pokemon\5.png" width="200" height="200" class="fire" alt = "Charmeleon">
-        <div class = "info">
-          <span class = "number">#005</span>
-        <small class = "type">Type: <span>fire</span></small>
-        </div>
+          
+          <h2 class = "name">Charmeleon</h2>
+ 
+          <img src="pokemon\5.png" width="200" height="200" class = "fire" alt = "Charmeleon">
+         
+          <div class = "type"> <h7>#005</h7> Type:<span>fire</span>
           </li>
         </div>
         
         <div class="column">
           <li>
-          <h2>Charizard</h2>
-        <img src = "pokemon\6.png" width="200" height="200" class="fire" alt = "Charizard">
-        <div class = "info">
-          <span class = "number">#006</span>
-        <small class = "type">Type: <span>fire</span>, <span>flying</span></small>
-        </div>
+          
+            <h2 class = "name">Charizard</h2>
+ 
+            <img src="pokemon\6.png" width="200" height="200" class = "fire" alt = "Charizard">
+           
+            <div class = "type"> <h7>#006</h7> Type:<span>fire</span>, <span>flying</span></div>
         </li>
         </div>
       </div>
@@ -121,35 +128,34 @@
     
       <div class="row">
         <div class="column">
+
           <li>
-          <h2>Squirtle</h2>
-        <img src = "pokemon\7.png" width="200" height="200" class="water" alt = "Squirtle">
-        <div class = "info">
-          <span class = "number">#007</span>
-        <small class = "type">Type: <span>water</span></small>
-        </div>
+            <h2 class = "name">Squirtle</h2>
+ 
+            <img src="pokemon\7.png" width="200" height="200" class = "fire" alt = "Squirtle">
+           
+            <div class = "type"> <h7>#007</h7> Type:<span>water</span>
           </li>
+
         </div>
         
         <div class="column">
           <li>
-          <h2>Wartortle</h2>
-        <img src = "pokemon\8.png" width="200" height="200" class="water" alt = "Wartortle">
-        <div class = "info">
-          <span class = "number">#008</span>
-        <small class = "type">Type: <span>water</span></small>
-        </div>
+            <h2 class = "name">Wartortle</h2>
+ 
+            <img src="pokemon\8.png" width="200" height="200" class = "fire" alt = "Wartortle">
+           
+            <div class = "type"> <h7>#008</h7> Type:<span>water</span>
         </li>
         </div>
         
         <div class="column">
           <li>
-          <h2>Blastoise</h2>
-        <img src = "pokemon\9.png" width="200" height="200" class="water" alt = "Blastoise">
-        <div class = "info">
-          <span class = "number">#009</span>
-        <small class = "type">Type: <span>water</span></small>
-        </div>
+            <h2 class = "name">Blastoise</h2>
+ 
+            <img src="pokemon\9.png" width="200" height="200" class = "fire" alt = "Blastoise">
+           
+            <div class = "type"> <h7>#009</h7> Type:<span>water</span>
           </li>
         </div>
       </div>
@@ -159,34 +165,35 @@
       <div class="row">
         <div class="column">
           <li>
-          <h2>Caterpie</h2>
-        <img src = "pokemon\10.png" width="200" height="200" class="bug" alt = "Caterpie">
-        <div class = "info">
-          <span class = "number">#010</span>
-        <small class = "type">Type: <span>bug</span></small>
-        </div>
+          
+            <h2 class = "name">Caterpie</h2>
+ 
+            <img src="pokemon\10.png" width="200" height="200" class = "fire" alt = "Caterpie">
+           
+            <div class = "type"> <h7>#010</h7> Type:<span>bug</span>
           </li>
         </div>
         
         <div class="column">
           <li>
-          <h2>Metapod</h2>
-        <img src = "pokemon\11.png" width="200" height="200" class="bug" alt = "Metapod">
-        <div class = "info">
-          <span class = "number">#011</span>
-        <small class = "type">Type: <span>bug</span></small>
-        </div>
+         
+            <h2 class = "name">Metapod</h2>
+ 
+            <img src="pokemon\11.png" width="200" height="200" class = "fire" alt = "Metapod">
+           
+            <div class = "type"> <h7>#011</h7> Type:<span>bug</span>
           </li>
         </div>
         
         <div class="column">
       <li>
-          <h2>Butterfree</h2>
-        <img src = "pokemon\12.png" width="200" height="200" class="bug" alt = "Butterfree">
-        <div class = "info">
-          <span class = "number">#012</span>
-        <small class = "type">Type: <span>bug</span>, <span>flying</span></small>
-        </div>
+          
+        <h2 class = "name">Butterfree</h2>
+ 
+        <img src="pokemon\12.png" width="200" height="200" class = "fire" alt = "Butterfree">
+       
+        <div class = "type"> <h7>#012</h7> Type:<span>bug</span> <span>flying</span>
+
       </li>
         </div>
       </div>
@@ -297,7 +304,9 @@
        
 </ul>
 
-</section>
+
+
+
 
 <h4>Reference: <a href="https://www.kaggle.com/kvpratama/pokemon-images-dataset">https://www.kaggle.com/kvpratama/pokemon-images-dataset</a></h4>
 

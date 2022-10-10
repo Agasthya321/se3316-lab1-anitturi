@@ -22,6 +22,7 @@ const chargeMoves = ["Sludge Bomb / Seed Bomb / Power Whip", "Sludge Bomb / Sola
 
 
 
+
 const pokemon = ["Bulbasaur","Ivysaur","Venusaur","Charmander","Charmeleon","Charizard","Squirtle",
                 "Wartortle","Blastoise","Caterpie","Metapod","Butterfree","Weedle","Kakuna",
                 "Beedrill","Pidgey","Pidgeotto","Pidgeot","Rattata","Raticate"]
@@ -32,33 +33,59 @@ const pokemon = ["Bulbasaur","Ivysaur","Venusaur","Charmander","Charmeleon","Cha
 // console.log(list[0])
 
 
+
+
+var pokemonNodeList = document.querySelectorAll("li")
+
 function displayPokemon(){
+    
+    
+    alert(pokemonNodeList.length)
 
-    let searchBox = document.getElementById("pokeName").value;
+    let searchBox = document.getElementById("pokeName").value.toLowerCase();
 
-    let filteredPokemon = [];
-
-    for (let i = 0; i < pokemon.length;i++){
-        if(pokemon[i].toLowerCase().includes(searchBox.toLowerCase())){
-            filteredPokemon.push(pokemon[i])
-        }
-    }
-    console.log(filteredPokemon);
-
-    var ul = document.getElementById("AllPokemon");
-    var li = document.createElement("li");
-    li.appendChild(document.createTextNode(filteredPokemon));
-    ul.appendChild(li)
-
-
-
-
-    // for (let i = 0; i < pokemon.length; i++){
-    //     if((pokemon[i].toLowerCase().includes(filteredPokemon.toLowerCase()))){
+  
+      for(let j = 0; j < pokemonNodeList.length; j++){
+        alert(pokemonNodeList.item(2).children.item(0).textContent.toLowerCase())
+        
+            if (pokemonNodeList.item(j).children.item(0).textContent.toLowerCase().includes(searchBox)){
+               
+                
+                let element = pokemonNodeList.item(j).cloneNode(true)
+                document.getElementById("newList").appendChild(element)
+            }
             
+            
+        }
+        
+        
+    
+
+    
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+      
+    // let filteredPokemon = [];
+
+    // for (let i = 0; i < pokemon.length;i++){
+    //     if(pokemon[i].toLowerCase().includes(searchBox.toLowerCase())){
+    //         filteredPokemon.push(pokemon[i])
     //     }
-    // } 
-}
+    // }
+    // console.log(filteredPokemon);
+
 
 
 // for(i = 0; i < filteredPokemon.length; i++){
@@ -143,6 +170,7 @@ function searchPokemonId(){
     }
 
 
+}
 }
 
  
