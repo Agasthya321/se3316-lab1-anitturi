@@ -8,7 +8,7 @@ h1{
 body{
     background: peachpuff;
 }
-.container{
+.division{
   width: 800px;
   height: 2200px;
   background: rgb(186, 227, 234);
@@ -17,14 +17,15 @@ body{
   border-style:groove;
 }
 
-/* .container1{
+.newDivision{
   width: 800px;
-  height: 700px;
-  background: rgb(227, 232, 208);
+  height: 600px;
+  background: rgb(186, 227, 234);
   margin-left: auto;
   margin-right: auto;
   border-style:groove;
-} */
+}
+
 
 ul{
   list-style: none;

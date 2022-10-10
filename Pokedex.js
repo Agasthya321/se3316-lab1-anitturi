@@ -21,72 +21,65 @@ const chargeMoves = ["Sludge Bomb / Seed Bomb / Power Whip", "Sludge Bomb / Sola
 
 
 
-
-
 const pokemon = ["Bulbasaur","Ivysaur","Venusaur","Charmander","Charmeleon","Charizard","Squirtle",
                 "Wartortle","Blastoise","Caterpie","Metapod","Butterfree","Weedle","Kakuna",
                 "Beedrill","Pidgey","Pidgeotto","Pidgeot","Rattata","Raticate"]
 
 
 
-// var list = document.getElementById("AllPokemon").getElementById("li");
-// console.log(list[0])
+
+var results = document.createElement("p");
+    results.id = "results"
 
 
 
+function displayPokemonName(){
 
-var pokemonNodeList = document.querySelectorAll("li")
+    document.getElementById("newDivision").children.item(0).remove();
 
-function displayPokemon(){
-    
-    
-    alert(pokemonNodeList.length)
+    var results = document.createElement("p");
+    results.id = "results"
 
     let searchBox = document.getElementById("pokeName").value.toLowerCase();
 
+    let filteredPokemon = [];
+
+    for (let i = 0; i < pokemon.length;i++){
+        if(pokemon[i].toLowerCase().includes(searchBox.toLowerCase()) && searchBox != ""){
+            filteredPokemon.push(pokemon[i])
+        }
+    }
+    console.log(filteredPokemon);
+
+
+    results.textContent= filteredPokemon;
+    document.getElementById("newDivision").appendChild(results);
+}
+    
+
+    
+    
+
+//     
+
   
-      for(let j = 0; j < pokemonNodeList.length; j++){
-        alert(pokemonNodeList.item(2).children.item(0).textContent.toLowerCase())
+//       for(let j = 0; j < pokemonNodeList.length; j++){
+//         alert(pokemonNodeList.item(2).children.item(0).textContent.toLowerCase())
         
-            if (pokemonNodeList.item(j).children.item(0).textContent.toLowerCase().includes(searchBox)){
+//             if (pokemonNodeList.item(j).children.item(0).textContent.toLowerCase().includes(searchBox)){
                
                 
-                let element = pokemonNodeList.item(j).cloneNode(true)
-                document.getElementById("newList").appendChild(element)
-            }
+//                 let element = pokemonNodeList.item(j).cloneNode(true)
+//                 document.getElementById("newList").appendChild(element)
+//             }
             
             
-        }
+//         }
         
         
     
 
     
-
-   
-
-
-
-
-
-
-
-
-
-
-
-
-      
-    // let filteredPokemon = [];
-
-    // for (let i = 0; i < pokemon.length;i++){
-    //     if(pokemon[i].toLowerCase().includes(searchBox.toLowerCase())){
-    //         filteredPokemon.push(pokemon[i])
-    //     }
-    // }
-    // console.log(filteredPokemon);
-
-
 
 // for(i = 0; i < filteredPokemon.length; i++){
 //     let test = document.createElement("li");
@@ -99,12 +92,6 @@ function displayPokemon(){
 
 
  
-
-
-   
-
-
-
 
 function searchPokemonName(){
 
@@ -171,6 +158,6 @@ function searchPokemonId(){
 
 
 }
-}
+
 
  
